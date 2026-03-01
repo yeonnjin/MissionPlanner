@@ -13,7 +13,7 @@ namespace MissionPlanner
 
             string strVersion = typeof(Splash).GetType().Assembly.GetName().Version.ToString();
 
-            TXT_version.Text = "Version: Titan " + Application.ProductVersion; // +" Build " + strVersion;
+            TXT_version.Text = "Version: ";
 
             // Use theme color for bottom line instead of hardcoded green
             label1.ForeColor = ThemeManager.BannerColor2;

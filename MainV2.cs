@@ -1145,7 +1145,7 @@ namespace MissionPlanner
             var logoImage = ThemeManager.IsDarkTheme
                 ? Properties.Resources.TD_MP
                 : Properties.Resources.TD_MP_light;
-            MenuArduPilot.Image = new Bitmap(logoImage, (int)(200), 31);
+            MenuArduPilot.Image = new Bitmap(logoImage, (int)(140), 40);
             MenuArduPilot.Width = MenuArduPilot.Image.Width;
 
             Application.DoEvents();
@@ -4941,7 +4941,7 @@ namespace MissionPlanner
         {
             try
             {
-                System.Diagnostics.Process.Start("https://titandynamics.aero");
+                System.Diagnostics.Process.Start("https://www.youtube.com/@SeungheonRC");
             }
             catch
             {

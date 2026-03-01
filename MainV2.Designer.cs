@@ -48,8 +48,8 @@ namespace MissionPlanner
             this.MenuInitConfig = new System.Windows.Forms.ToolStripButton();
             this.MenuConfigTune = new System.Windows.Forms.ToolStripButton();
             this.MenuSimulation = new System.Windows.Forms.ToolStripButton();
-            this.toolStripVehicleState = new MissionPlanner.Controls.ToolStripVehicleState();
             this.MenuHelp = new System.Windows.Forms.ToolStripButton();
+            this.toolStripVehicleState = new MissionPlanner.Controls.ToolStripVehicleState();
             this.MenuConnect = new System.Windows.Forms.ToolStripButton();
             this.toolStripConnectionControl = new MissionPlanner.Controls.ToolStripConnectionControl();
             this.MenuArduPilot = new System.Windows.Forms.ToolStripButton();
@@ -130,58 +130,59 @@ namespace MissionPlanner
             // 
             // MenuFlightData
             // 
-            this.MenuFlightData.ForeColor = System.Drawing.SystemColors.ControlLight;
             resources.ApplyResources(this.MenuFlightData, "MenuFlightData");
+            this.MenuFlightData.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.MenuFlightData.Margin = new System.Windows.Forms.Padding(0);
             this.MenuFlightData.Name = "MenuFlightData";
             this.MenuFlightData.Click += new System.EventHandler(this.MenuFlightData_Click);
             // 
             // MenuFlightPlanner
             // 
-            this.MenuFlightPlanner.ForeColor = System.Drawing.SystemColors.ControlLight;
             resources.ApplyResources(this.MenuFlightPlanner, "MenuFlightPlanner");
+            this.MenuFlightPlanner.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.MenuFlightPlanner.Margin = new System.Windows.Forms.Padding(0);
             this.MenuFlightPlanner.Name = "MenuFlightPlanner";
             this.MenuFlightPlanner.Click += new System.EventHandler(this.MenuFlightPlanner_Click);
             // 
             // MenuInitConfig
             // 
-            this.MenuInitConfig.ForeColor = System.Drawing.SystemColors.ControlLight;
             resources.ApplyResources(this.MenuInitConfig, "MenuInitConfig");
+            this.MenuInitConfig.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.MenuInitConfig.Margin = new System.Windows.Forms.Padding(0);
             this.MenuInitConfig.Name = "MenuInitConfig";
             this.MenuInitConfig.Click += new System.EventHandler(this.MenuSetup_Click);
             // 
             // MenuConfigTune
             // 
-            this.MenuConfigTune.ForeColor = System.Drawing.SystemColors.ControlLight;
             resources.ApplyResources(this.MenuConfigTune, "MenuConfigTune");
+            this.MenuConfigTune.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.MenuConfigTune.Margin = new System.Windows.Forms.Padding(0);
             this.MenuConfigTune.Name = "MenuConfigTune";
             this.MenuConfigTune.Click += new System.EventHandler(this.MenuTuning_Click);
             // 
             // MenuSimulation
             // 
-            this.MenuSimulation.ForeColor = System.Drawing.SystemColors.ControlLight;
             resources.ApplyResources(this.MenuSimulation, "MenuSimulation");
+            this.MenuSimulation.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.MenuSimulation.Margin = new System.Windows.Forms.Padding(0);
             this.MenuSimulation.Name = "MenuSimulation";
             this.MenuSimulation.Click += new System.EventHandler(this.MenuSimulation_Click);
-            //
-            // toolStripVehicleState
-            //
-            this.toolStripVehicleState.BackColor = System.Drawing.Color.Transparent;
-            this.toolStripVehicleState.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.toolStripVehicleState.Name = "toolStripVehicleState";
-            this.toolStripVehicleState.Size = new System.Drawing.Size(200, 32);
             // 
             // MenuHelp
             // 
-            this.MenuHelp.ForeColor = System.Drawing.SystemColors.ControlLight;
             resources.ApplyResources(this.MenuHelp, "MenuHelp");
+            this.MenuHelp.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.MenuHelp.Margin = new System.Windows.Forms.Padding(0);
             this.MenuHelp.Name = "MenuHelp";
             this.MenuHelp.Click += new System.EventHandler(this.MenuHelp_Click);
+            // 
+            // toolStripVehicleState
+            // 
+            resources.ApplyResources(this.toolStripVehicleState, "toolStripVehicleState");
+            this.toolStripVehicleState.BackColor = System.Drawing.Color.Transparent;
+            this.toolStripVehicleState.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.toolStripVehicleState.MinimumModeWidth = 0;
+            this.toolStripVehicleState.Name = "toolStripVehicleState";
             // 
             // MenuConnect
             // 
@@ -204,12 +205,13 @@ namespace MissionPlanner
             // MenuArduPilot
             // 
             this.MenuArduPilot.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            resources.ApplyResources(this.MenuArduPilot, "MenuArduPilot");
             this.MenuArduPilot.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.MenuArduPilot, "MenuArduPilot");
             this.MenuArduPilot.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.MenuArduPilot.ForeColor = System.Drawing.Color.White;
-            this.MenuArduPilot.Margin = new System.Windows.Forms.Padding(0);
+            this.MenuArduPilot.Margin = new System.Windows.Forms.Padding(0, 0, 10, 0);
             this.MenuArduPilot.Name = "MenuArduPilot";
+            this.MenuArduPilot.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never;
             this.MenuArduPilot.Click += new System.EventHandler(this.MenuArduPilot_Click);
             // 
             // menu
